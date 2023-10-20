@@ -4,13 +4,19 @@ name: testingGHActions
 on: [push, pull_request]
 
 jobs:
-  demobuild:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: testingdemo   
-        run: echo "next step"
-      - name: next step
-         run:|
-              ls -l
-              pwd
+ demobuild:
+  runs-on: ubuntu-latest
+  steps:
+  - name: testingdemo   
+    run: echo "next step"
+  - name: next step
+     run:|
+      ls -l
+       pwd
+ demobuild2: 
+  runs-on: ubuntu-latest
+  steps:
+  - name: testingdemo2
+    run: |
+     ls -l
+     echo "testingdemo2"
