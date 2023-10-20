@@ -9,5 +9,8 @@ jobs:
     
     steps:
       - name: testingdemo   
-        run: 
-          echo All, Welcome to the training!
+        run: echo "next step"
+      - name: next step
+         run:|
+              ls -l
+              pwd
